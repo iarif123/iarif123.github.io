@@ -1,5 +1,5 @@
 var commandText = function(text){
-  return "[[g;#000;]" + text + "]";
+  return "[[g;#EEEEEE;]" + text + "]";
 }
 
 var titleText = function(text){
