@@ -69,7 +69,6 @@ var App = {
     this.echo("|  " + commandText("work") + "               - My Professional Experience");
     this.echo("|  " + commandText("projects") + "           - Recent projects of mine");
     this.echo("|  " + commandText("skills") + "             - What I can do");
-    this.echo("|  " + commandText("awards") + "             - Awards and features for my work");
     this.echo("|");
     this.echo("|  " + commandText("social") + "             - My Social Status");
     this.echo("|  " + commandText("contact") + "            - Contact me")
@@ -225,17 +224,6 @@ var App = {
     this.echo("|  Using " + commandText('Jquery Terminal Emulator') + " by " + commandText('Jakub Jankiewicz') + ": http://terminal.jcubic.pl");
     this.echo();
   },
-  award: function(){
-    this.exec('awards');
-  },
-  awards: function(){
-    this.echo();
-    this.echo("|  " + commandText('Top 10 in WearHacks Hackathon') + "                                Oct  2015  \n|   | WearHacks                     project: http://devpost.com/software/omgee");
-    this.echo("|  " + commandText('3rd Place in Rock and Code Hackathon') + "                         Sept 2015  \n|   | Sony Music Entertainment      project: http://devpost.com/software/xplora");
-    this.echo("|  " + commandText('2nd Place in Stock Investment Competition') + "                    Jan  2015  \n|   | Dunamnu");
-    this.echo("|  " + commandText('Financial Risk Manager') + "                                       Dec  2014  \n|   | Global Association of Risk Professionals");
-    this.echo();
-  },
   download: function(){
     window.location.href = "https://iarif123.github.io/Resume.pdf";
   },
@@ -263,7 +251,6 @@ var App = {
     this.exec('work');
     this.exec('projects');
     this.exec('skills');
-    this.exec('awards');
     this.exec('social');
     this.exec('contact');
     this.exec('resume');
@@ -329,7 +316,7 @@ var App = {
 jQuery(document).ready(function($) {
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
       //window.location.href = "http://keon.io/resume";
-    $('#about').terminal(App, {
+    $('body').terminal(App, {
       greetings: function(cb){
         that = this;
         // cb(App.intro(true));
@@ -344,7 +331,7 @@ jQuery(document).ready(function($) {
       checkArity: false
     });
   } else {
-    $('#about').terminal(App, {
+    $('body').terminal(App, {
       greetings: function(cb){
         cb(App.intro(true));
       },
