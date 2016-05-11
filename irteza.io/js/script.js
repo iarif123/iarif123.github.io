@@ -154,11 +154,11 @@ var App = {
     this.echo();
     this.echo("|  Name:         " + commandText('Irteza Arif'));
     this.echo("|");
-    this.echo("|  Summary:      I am a Backend Web Developer (primarily " + commandText('Node.js') + ", " + commandText('Java') + ") and \n|                develop games as an interest (Unity).");
-    this.echo("|                I am a graduate from " + commandText('The University of Waterloo')+". I did my undergrad in \n|                "+commandText('Electrical and Computer Engineering')+".");
-    this.echo("|                I also do my fair share of front end development using technologies \n|                such as " + commandText('Angular.js') + " and " + commandText('React.js'));
+    this.echo("|  Summary:      I am a Backend Web Developer (primarily " + commandText('Node.js') + ", " + commandText('Java') + ") and develop \n|                games as an interest (Unity).\n");
+    this.echo("|                I also do my fair share of front end development using technologies \n|                such as " + commandText('Angular.js') + " and " + commandText('React.js') + " as well as some android development "+ "\n|                "+commandText('(Android Studio, Java)')+"\n");
+    this.echo("|                I am a graduate from " + commandText('The University of Waterloo')+". I did my undergrad  \n|                "+ "in " +commandText('Electrical and Computer Engineering')+".");
     this.echo("|");
-    this.echo("|  Employment:   I am currently looking for " + commandText("work oppertunities") + " in the " + commandText("GTA and Kitcher/Waterloo") + " area. \n|                Get in touch if you'd like to discuss a proposal!");
+    this.echo("|  Employment:   I am currently looking for " + commandText("work opportunities") + " in the " + commandText("GTA and Kitchener/Waterloo") + " area. \n|                Get in touch if you'd like to discuss a proposal!");
     this.echo();
   },
   project: function(){
